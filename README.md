@@ -3,7 +3,7 @@
 An AI-powered web application that detects and interprets **hand gestures** in real-time using computer vision and machine learning.  
 Built with **React + TypeScript**, **TensorFlow.js**, and styled with **shadcn/ui**.
 
-![Project Mockup](A_digital_image_showcases_an_AI_Gesture_Control_pr.png)
+![Project Mockup](https://i.postimg.cc/DZPSRJ3M/Chat-GPT-Image-Aug-10-2025-04-26-32-AM.png)
 
 ---
 
