@@ -1,0 +1,40 @@
+{
+    "tabs": {
+        "00": {
+            "tab_id": "00",
+            "cwd": "/workspace/shadcn-ui",
+            "observer": {
+                "block": "Terminal",
+                "uuid": "1ea0d00e-ca5a-44a6-8d30-c8f2457aa4fc",
+                "enable_llm_stream": false,
+                "callback_url": ""
+            },
+            "shell_command": [
+                "bash"
+            ],
+            "command_terminator": "\n"
+        },
+        "01": {
+            "tab_id": "01",
+            "cwd": "/workspace/shadcn-ui",
+            "observer": {
+                "block": "Terminal",
+                "uuid": "ec765684-c755-4285-ab66-83e4bb02e017",
+                "enable_llm_stream": false,
+                "callback_url": ""
+            },
+            "shell_command": [
+                "bash"
+            ],
+            "command_terminator": "\n"
+        }
+    },
+    "current_tab_id": "01",
+    "forbidden_commands": {
+        "run preview": "Use Deployer.deploy_to_public instead.",
+        "serve ": "Use Deployer.deploy_to_public instead.",
+        "python -m http.server": "Use python -u -m http.server port_number instead."
+    },
+    "timeout": 300.0,
+    "working_dir": "/workspace"
+}

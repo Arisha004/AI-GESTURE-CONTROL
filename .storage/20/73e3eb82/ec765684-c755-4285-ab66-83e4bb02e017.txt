@@ -1,0 +1,2 @@
+$ curl -s http://localhost:5174/ > /dev/null && echo "App is accessible" || echo "App is not accessible"
+App is accessible

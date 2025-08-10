@@ -1,0 +1,34 @@
+$ ls -la
+total 2778
+drwxr-xr-x 318 root root 1429504 Aug  5 03:23 .
+drwxr-xr-x   1 root root     127 Aug  5 03:23 ..
+-rw-rw-r--   1 root root   24319 Aug  4 10:48 .MGXEnv.json
+drwxr-xr-x   2 root root    4096 Aug  5 03:23 .MGXTools
+drwxr-xr-x 223 root root  933888 Aug  4 10:48 .git
+-rw-rw-r--   1 root root    1472 Aug  4 10:44 .gitattributes
+-rw-rw-r--   1 root root     476 Aug  4 10:44 .gitignore
+-rw-r--r--   1 root root     119 Aug  4 10:48 .timeline.json
+-rw-rw-r--   1 root root    3159 Aug  4 10:48 .wiki.md
+drwxrwxr-x  89 root root  446464 Aug  5 03:23 shadcn-ui
+$ cd shadcn-ui && ls -la
+
+total 2223
+drwxrwxr-x  89 root root  446464 Aug  5 03:23 .
+drwxr-xr-x 318 root root 1429504 Aug  5 03:23 ..
+-rw-rw-r--   1 root root     253 Aug  4 10:44 .gitignore
+drwxrwxr-x   3 root root    8192 Aug  4 10:44 .mgx
+-rw-rw-r--   1 root root    1138 Aug  4 10:44 README.md
+-rw-rw-r--   1 root root     414 Aug  4 10:44 components.json
+-rw-rw-r--   1 root root     789 Aug  4 10:44 eslint.config.js
+-rw-rw-r--   1 root root     725 Aug  4 10:44 index.html
+drwxr-xr-x   3 root root      19 Aug  5 03:23 node_modules
+-rw-rw-r--   1 root root    2673 Aug  4 10:44 package.json
+-rw-rw-r--   1 root root      80 Aug  4 10:44 postcss.config.js
+drwxrwxr-x   4 root root   12288 Aug  4 10:44 public
+drwxrwxr-x  69 root root  364544 Aug  4 10:44 src
+-rw-rw-r--   1 root root    2836 Aug  4 10:44 tailwind.config.ts
+-rw-rw-r--   1 root root     818 Aug  4 10:44 template_config.json
+-rw-rw-r--   1 root root     652 Aug  4 10:44 tsconfig.app.json
+-rw-rw-r--   1 root root     381 Aug  4 10:44 tsconfig.json
+-rw-rw-r--   1 root root     481 Aug  4 10:44 tsconfig.node.json
+-rw-rw-r--   1 root root     287 Aug  4 10:44 vite.config.ts

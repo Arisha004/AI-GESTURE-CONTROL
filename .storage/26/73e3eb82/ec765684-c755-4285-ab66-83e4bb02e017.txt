@@ -1,0 +1,30 @@
+$ curl -s http://localhost:5174/ > /dev/null && echo "App is accessible" || echo "App is not accessible"
+App is accessible
+$ pnpm run build
+
+
+> ai-gesture-control@0.0.0 build /workspace/shadcn-ui
+> tsc && vite build
+
+vite v5.0.0 building for production...
+transforming...
+✓ 4 modules transformed.
+[vite:css] [postcss] Cannot find module '@tailwindcss/aspect-ratio'
+Require stack:
+- /workspace/shadcn-ui/tailwind.config.ts
+file: /workspace/shadcn-ui/src/index.css:undefined:NaN
+error during build:
+Error: [postcss] Cannot find module '@tailwindcss/aspect-ratio'
+Require stack:
+- /workspace/shadcn-ui/tailwind.config.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Function.resolve (node:internal/modules/helpers:187:19)
+    at _resolve (/workspace/shadcn-ui/node_modules/.pnpm/jiti@1.21.7/node_modules/jiti/dist/jiti.js:1:246378)
+    at jiti (/workspace/shadcn-ui/node_modules/.pnpm/jiti@1.21.7/node_modules/jiti/dist/jiti.js:1:249092)
+    at /workspace/shadcn-ui/tailwind.config.ts:3:20
+    at evalModule (/workspace/shadcn-ui/node_modules/.pnpm/jiti@1.21.7/node_modules/jiti/dist/jiti.js:1:251913)
+    at jiti (/workspace/shadcn-ui/node_modules/.pnpm/jiti@1.21.7/node_modules/jiti/dist/jiti.js:1:249841)
+    at /workspace/shadcn-ui/node_modules/.pnpm/tailwindcss@3.3.5/node_modules/tailwindcss/lib/lib/load-config.js:37:30
+    at loadConfig (/workspace/shadcn-ui/node_modules/.pnpm/tailwindcss@3.3.5/node_modules/tailwindcss/lib/lib/load-config.js:39:6)
+    at getTailwindConfig (/workspace/shadcn-ui/node_modules/.pnpm/tailwindcss@3.3.5/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:71:116)
+ ELIFECYCLE  Command failed with exit code 1.

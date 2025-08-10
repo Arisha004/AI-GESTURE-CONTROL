@@ -1,0 +1,123 @@
+$ ls -la
+total 2778
+drwxr-xr-x 318 root root 1429504 Aug  5 03:23 .
+drwxr-xr-x   1 root root     127 Aug  5 03:23 ..
+-rw-rw-r--   1 root root   24319 Aug  4 10:48 .MGXEnv.json
+drwxr-xr-x   2 root root    4096 Aug  5 03:23 .MGXTools
+drwxr-xr-x 223 root root  933888 Aug  4 10:48 .git
+-rw-rw-r--   1 root root    1472 Aug  4 10:44 .gitattributes
+-rw-rw-r--   1 root root     476 Aug  4 10:44 .gitignore
+-rw-r--r--   1 root root     119 Aug  4 10:48 .timeline.json
+-rw-rw-r--   1 root root    3159 Aug  4 10:48 .wiki.md
+drwxrwxr-x  89 root root  446464 Aug  5 03:23 shadcn-ui
+$ cd shadcn-ui && ls -la
+
+total 2223
+drwxrwxr-x  89 root root  446464 Aug  5 03:23 .
+drwxr-xr-x 318 root root 1429504 Aug  5 03:23 ..
+-rw-rw-r--   1 root root     253 Aug  4 10:44 .gitignore
+drwxrwxr-x   3 root root    8192 Aug  4 10:44 .mgx
+-rw-rw-r--   1 root root    1138 Aug  4 10:44 README.md
+-rw-rw-r--   1 root root     414 Aug  4 10:44 components.json
+-rw-rw-r--   1 root root     789 Aug  4 10:44 eslint.config.js
+-rw-rw-r--   1 root root     725 Aug  4 10:44 index.html
+drwxr-xr-x   3 root root      19 Aug  5 03:23 node_modules
+-rw-rw-r--   1 root root    2673 Aug  4 10:44 package.json
+-rw-rw-r--   1 root root      80 Aug  4 10:44 postcss.config.js
+drwxrwxr-x   4 root root   12288 Aug  4 10:44 public
+drwxrwxr-x  69 root root  364544 Aug  4 10:44 src
+-rw-rw-r--   1 root root    2836 Aug  4 10:44 tailwind.config.ts
+-rw-rw-r--   1 root root     818 Aug  4 10:44 template_config.json
+-rw-rw-r--   1 root root     652 Aug  4 10:44 tsconfig.app.json
+-rw-rw-r--   1 root root     381 Aug  4 10:44 tsconfig.json
+-rw-rw-r--   1 root root     481 Aug  4 10:44 tsconfig.node.json
+-rw-rw-r--   1 root root     287 Aug  4 10:44 vite.config.ts
+$ ls -la src/
+
+total 1129
+drwxrwxr-x 69 root root 364544 Aug  4 10:44 .
+drwxrwxr-x 89 root root 446464 Aug  5 03:23 ..
+-rw-rw-r--  1 root root      0 Aug  4 10:44 App.css
+-rw-rw-r--  1 root root    880 Aug  4 10:44 App.tsx
+drwxrwxr-x 52 root root 278528 Aug  4 10:44 components
+drwxrwxr-x  4 root root  12288 Aug  4 10:44 hooks
+-rw-rw-r--  1 root root   2235 Aug  4 10:44 index.css
+drwxrwxr-x  6 root root  24576 Aug  4 10:44 lib
+-rw-rw-r--  1 root root    161 Aug  4 10:44 main.tsx
+drwxrwxr-x  4 root root  24576 Aug  4 10:44 pages
+-rw-rw-r--  1 root root     38 Aug  4 10:44 vite-env.d.ts
+$ pnpm install && pnpm run lint
+
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @swc/core, core-js, esbuild.                        │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Done in 1s using pnpm v10.14.0
+
+> ai-gesture-control@0.0.0 lint /workspace/shadcn-ui
+> eslint .
+
+
+Oops! Something went wrong! :(
+
+ESLint: 8.53.0
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@eslint/js' imported from /workspace/shadcn-ui/eslint.config.js
+Did you mean to import @eslint+js@8.53.0/node_modules/@eslint/js/src/index.js?
+    at packageResolve (node:internal/modules/esm/resolve:853:9)
+    at moduleResolve (node:internal/modules/esm/resolve:910:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1130:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:396:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:365:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:240:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:85:39)
+    at link (node:internal/modules/esm/module_job:84:36)
+ ELIFECYCLE  Command failed with exit code 2.
+$ pnpm install && pnpm run lint
+
+ WARN  deprecated eslint-define-config@1.24.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 38, reused 37, downloaded 0, added 0
+ WARN  deprecated eslint@8.53.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+Progress: resolved 65, reused 64, downloaded 0, added 0
+Progress: resolved 317, reused 305, downloaded 0, added 0
+ WARN  5 deprecated subdependencies found: @humanwhocodes/config-array@0.11.14, @humanwhocodes/object-schema@2.0.3, glob@7.2.3, inflight@1.0.6, rimraf@3.0.2
+Packages: +1
++
+Progress: resolved 514, reused 464, downloaded 0, added 0
+Progress: resolved 514, reused 464, downloaded 1, added 0
+Progress: resolved 514, reused 464, downloaded 1, added 1
+Progress: resolved 514, reused 464, downloaded 1, added 1, done
+
+devDependencies:
++ eslint-define-config 1.24.1 (2.1.0 is available) deprecated
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @swc/core, core-js, esbuild.                        │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Done in 10.6s using pnpm v10.14.0
+
+> ai-gesture-control@0.0.0 lint /workspace/shadcn-ui
+> eslint .
+
+
+Oops! Something went wrong! :(
+
+ESLint: 8.53.0
+
+A config object is using the "root" key, which is not supported in flat config system.
+
+Flat configs always act as if they are the root config file, so this key can be safely removed.
+ ELIFECYCLE  Command failed with exit code 2.
